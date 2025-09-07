@@ -1,4 +1,20 @@
-# Make Dart files count towards language stats
+# Force GitHub to detect Dart
+*.dart linguist-detectable=true
+
+# Ignore native build files like CMake
+CMakeLists.txt linguist-detectable=false
+*.cmake linguist-detectable=false
+
+# Ignore C++ or native code
+*.cpp linguist-detectable=false
+*.h linguist-detectable=false
+
+# Ignore auto-generated Flutter platform files
+android/** linguist-detectable=false
+ios/** linguist-detectable=false
+macos/** linguist-detectable=false
+windows/** linguist-detectable=false
+linux/** linguist-detectable=false# Make Dart files count towards language stats
 *.dart linguist-detectable=true
 
 # Ignore C++ files
