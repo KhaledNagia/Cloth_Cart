@@ -1,0 +1,6 @@
+# Make Dart files count towards language stats
+*.dart linguist-detectable=true
+
+# Ignore C++ files
+*.cpp linguist-detectable=false
+*.h linguist-detectable=false
