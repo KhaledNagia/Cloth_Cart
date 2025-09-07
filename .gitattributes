@@ -1,4 +1,30 @@
-# Force GitHub to detect Dart
+ Ignore Flutter platform-specific folders
+android/** linguist-vendored
+ios/** linguist-vendored
+web/** linguist-vendored
+macos/** linguist-vendored
+windows/** linguist-vendored
+linux/** linguist-vendored
+
+# Ignore build files and generated files
+build/** linguist-vendored
+
+# Only count Dart files in lib and test folders
+lib/** linguist-detectable=true
+test/** linguist-detectable=true# Ignore Flutter platform-specific folders
+android/** linguist-vendored
+ios/** linguist-vendored
+web/** linguist-vendored
+macos/** linguist-vendored
+windows/** linguist-vendored
+linux/** linguist-vendored
+
+# Ignore build files and generated files
+build/** linguist-vendored
+
+# Only count Dart files in lib and test folders
+lib/** linguist-detectable=true
+test/** linguist-detectable=true# Force GitHub to detect Dart
 *.dart linguist-detectable=true
 
 # Ignore native build files like CMake
